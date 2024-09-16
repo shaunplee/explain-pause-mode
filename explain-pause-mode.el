@@ -1711,13 +1711,13 @@ same."
 ;; logging functions
 (defun explain-pause-mode-change-alert-style (new-style)
   "Change the alerting style to NEW-STYLE. Note that this does not change the
-customizable variable `explain-pause-alert-style'.
+customizable variable `explain-pause-alert-style\\='.
 
 NEW-STYLE can be:
-'developer, where all alerts are shown;
-'normal, when alerts are shown when more then 5 have occurred, and not
+\\='developer, where all alerts are shown;
+\\='normal, when alerts are shown when more then 5 have occurred, and not
 within 15 minutes of the last time an alert was shown; or
-'silent, aka never."
+\\='silent, aka never."
   (let ((kinds
          '((developer . explain-pause-mode--log-alert-developer)
            (normal . explain-pause-mode--log-alert-normal))))
